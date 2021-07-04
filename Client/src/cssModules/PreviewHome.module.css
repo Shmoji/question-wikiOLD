@@ -1,0 +1,42 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers horizontally */
+  margin: 30px 0 0 0; /* t, r, b, l */
+}
+
+.topH1 {
+  margin-bottom: 20px;
+}
+
+
+.infocard {
+  border: 1px solid lightgray;
+  border-radius: 1%;
+  width: 40em;
+  min-height: 5em;
+  /* Bottom 2 lines center div inside bootstrap column */
+  float: none;
+  margin: 0.5em auto 1em; /* t, r, b, l */ /* The top margin provides space between Cards on Home.js */
+  background-color: white;
+}
+
+.infotitle {
+  font-weight: bold;
+  font-size: large;
+  margin: 1em 1em 0 1em; /* t, r, b, l */
+  color: black;
+}
+
+.infouser {
+  display: block;
+  margin: 0 1em 0 1em; /* t, r, b, l */
+}
+
+.infotext {
+  margin: 0.5em 0 1em 0; /* t, r, b, l */
+}
+
+.cardDate {
+  font-size: small;
+}

@@ -1,0 +1,25 @@
+.infocard {
+  border: 1px solid lightgray;
+  border-radius: 1%;
+  width: 40em;
+  min-height: 5em;
+  /* Bottom 2 lines center div inside bootstrap column */
+  float: none;
+  margin: 0.5em auto 0; /* t, r, b, l */ /* The top margin provides space between Cards on Home.js */
+  background-color: white;
+}
+
+.infotitle {
+  font-weight: bold;
+  font-size: large;
+  margin: 1em 1em 0.5em 1em; /* t, r, b, l */
+  color: black;
+}
+
+.infotext {
+  margin: 1em 1em 0.5em 1em; /* t, r, b, l */
+}
+
+.cardscontainer {
+  margin: 0 0 1em 0; /* Puts space beneath the very last card */
+}

@@ -1,0 +1,262 @@
+.qpMenu {
+  position: fixed;
+  border-right: 1px solid darkgray;
+  height: 100%;
+  width: 10em;
+}
+
+.qpTab {
+  border: 1px solid darkgray;
+  border-right: 0; /* take away right border of tabs */
+  border-radius: 3em 0 0 3em; /* top left, top right, bottom right, bottom left */
+  width: 8em;
+  height: 4em;
+  margin: 1em 0 0 auto; /* t, r, b, l */
+  color: black;
+  background-color: white;
+}
+
+.activeQPTab {
+  border: 1px solid darkgray;
+  border-right: 0; /* take away right border of tabs */
+  border-radius: 3em 0 0 3em; /* top left, top right, bottom right, bottom left */
+  width: 8em;
+  height: 4em;
+  margin: 1em 0 0 auto; /* t, r, b, l */
+  background-color: black;
+  color: white;
+}
+
+.qpTab:hover, .activeQPTab:hover {
+  background-color: #6b6b6b;
+}
+
+.tabText {
+  font-size: large;
+  text-align: left;
+  line-height: 55px; /* Vertically aligns text */
+  margin-left: 1em;
+}
+
+.qpLeftMargin {
+  margin-left: 9em;
+}
+
+.qpTitle {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  line-height: 40px;
+  margin: 0.9em 11em 0 6em; /* t, r, b, l */
+}
+
+.qpSimple {
+  border: 1px solid darkgray;
+  border-radius: 3em;
+  width: 50em;
+  min-height: 25em;
+  margin: 2em 0 2em 12em; /* t, r, b, l */
+  padding: 0em 0 2em 0em; /* t, r, b, l */
+  background-color: white;
+}
+
+.qpSimple > p {
+  margin: 0.5em 0 0.5em 1.5em;
+}
+
+.qpSimple > p:first-child {
+  font-size: 25px;
+}
+
+.qpSimple ul {
+  margin: 1em 2em 1em 0; /* t, r, b, l */
+}
+
+.formCentered {
+  padding: 0 2em !important;
+}
+
+.newSectionFormCentered {
+  padding: 0.75em 2em 0 2em !important;
+}
+
+.newSectionEditCentered {
+  padding: 0.25em 1em 0 0.25em !important;
+}
+
+.qpSimpleAnswer {
+  font-size: 24px;
+  padding: 5px 0 5px 0;
+}
+
+.qpSimpleAnswer:hover {
+  background-color: #eee;
+}
+
+.qpInDepthNewSection {
+  border: 1px solid darkgray;
+  border-radius: 1.5em;
+  width: 100%;
+  height: 4em;
+}
+
+.qpInDepthSection {
+  border: 1px solid darkgray;
+  border-radius: 1.5em;
+  width: 100%;
+  height: 4em;
+}
+
+.qpInDepthSection:hover {
+  cursor: pointer;
+  background-color: #6b6b6b;
+}
+
+.qpSectionTitle {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 1em;
+}
+
+.qpPersonal {
+  width: 50em;
+  margin: 0.5em 0 0 12em; /* t, r, b, l */
+}
+
+.actionBtns {
+  font-size: 20px;
+  display: flex;
+  flex: 1; /* Take up entire width that element can take up */
+  flex-direction: row;
+  /*justify-content: space-evenly;*/
+  align-items: baseline; /* Aligns all flex items vertically */
+}
+
+.actionBtns .btn {
+  color: black;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.actionBtns .btn:hover {
+  background: rgba(1, 1, 1, 0.1); /* Make background color very dull when hovering over */
+  border-radius: 20px; /* Make background shape rounded when hovering over */
+}
+
+.actionBtns .ansBtnActivated {
+  color: rgba(1, 1, 1, 0.2); /* Make color very dull  */
+  cursor: default; /* No pointer when activated */
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.qpPersonalAnswer {
+  border: 1px solid darkgray;
+  border-radius: 1.5em;
+  width: 100%;
+  min-height: 10em;
+  margin-bottom: 1em;
+  background-color: white;
+}
+
+.infotitle {
+  font-weight: bold;
+  font-size: large;
+  margin: 2em 1em 0 1em; /* t, r, b, l */
+  color: black;
+}
+
+.infouser {
+  display: block;
+  margin: 1em 2em 0 2em; /* t, r, b, l */
+}
+
+.userimg {
+  float: left;
+}
+
+.userimg img {
+  display: block;
+}
+
+.usertxt p {
+  font-size: small;
+  margin: 0 0 0 3.5em; /* t, r, b, l */
+}
+
+.infotext {
+  margin: 0.5em 0 1em 0; /* t, r, b, l */
+}
+
+.answerBtns {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center; /* cross axis -- centers 2 divs vertically */
+}
+
+/* Puts a bit space after text like: Upvote/Downvote/Share */
+.left > span, .right > span {
+  margin-right: 2em;
+  margin-left: 0.2em;
+}
+
+/* For answer buttons */
+.left {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center; /* cross axis -- centers 2 divs vertically */
+  justify-content: flex-start;
+}
+
+.right {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center; /* cross axis -- centers 2 divs vertically */
+  justify-content: flex-end;
+}
+
+.comments {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center; /* cross axis -- centers vertically */
+  justify-content: space-evenly;
+  margin-bottom: 1em;
+  border: 1px solid darkgray; /* Box around comments/everything */
+  padding: 0.5em;
+}
+
+.upvote {
+  color: lightgray;
+}
+
+.ddContainer {
+  position: relative; /* Because we want absolutely positioned dropdown relative to this container */
+  display: inline-block; /* Width/height of this container will adjust automatically to however large the btn is */
+  cursor: pointer;
+  
+ 
+}
+
+.ddContainer p {
+  margin: auto 0; /* Somehow this centers the text "More Options" <p> tag */
+}
+
+.dropdown {
+  position: absolute;
+  z-index: 40;
+  top: 100%;
+  right: 0;
+  width: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+  background-color: white;
+} 
+.dropdown ul { list-style: none; padding: 0; margin: 0; } 
+.dropdown li { padding: 8px 12px; font-size: small; } 
+.dropdown li:hover { background-color: rgba(0, 0, 0, 0.14); cursor: pointer; }

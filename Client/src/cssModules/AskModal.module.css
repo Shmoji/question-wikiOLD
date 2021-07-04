@@ -1,0 +1,76 @@
+.modal {
+  position: fixed; /* So it will stay even if scroll and not be in header */
+  top: 25vh;
+  width: 500px;
+  min-height: 250px;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 50;
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px #555;
+}
+
+.modal.off {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal h2 {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+  margin: 0;
+}
+
+.modal .content {
+  padding: 1rem;
+}
+
+.modal .content > p {
+  font-size: 18px; /* Used for non-logged in ask modal */
+}
+
+.modal .content textarea {
+  width: 100%;
+  
+}
+
+/* Used for all ask modal buttons */
+.modal button {
+  display: inline-block;
+  padding: 0.4em 1.7em; /* t, r, b, l */
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+  background-color: #3369ff;
+  box-shadow: inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
+  text-align: center;
+  position: relative;
+}
+
+.modal .actions {
+  border-top: 1px solid #ccc;
+  background: #eee;
+  padding: 0.5rem 1rem;
+}
+
+.infouser {
+  display: block;
+  margin: 0 0 1em 0; /* t, r, b, l */
+}
+
+.userimg {
+  float: left;
+}
+
+.userimg img {
+  display: block;
+}
+
+.usertxt p {
+  font-size: small;
+  margin: 0 0 0 3.5em; /* t, r, b, l */
+}
